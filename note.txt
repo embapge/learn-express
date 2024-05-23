@@ -8,3 +8,13 @@
     Folder berisikan asset yang dapat diakses secara publik seperti gambar dsb.
 - Scripts
     Folder berisikan seeding data untuk database.
+
+
+Library:
+- Load data secara dinamis/real-time.
+    - import { unstable_noStore as noStore } from 'next/cache';
+        Digunakan agar data fetch tidak disimpan ke dalam cache/dynamic. Tujuan agar data selalu real-time, tidak ter-cache.
+        Namun tidak stable.
+    - Route Segment Config
+        Metode ini digunakan untuk mengatasi unstable_noStore yang tidak stable.
+        implement "dynamic: force-dynamic" pada Page, Layout atau Route Handler.
