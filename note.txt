@@ -1,0 +1,10 @@
+- App
+    Folder berisikan route, component(.js,jsx), logic/service.
+    - Lib
+        Folder yang berisikan reusable utilitas fungsi dan fetching data.
+    - Ui
+        Folder berisikan component(.html) seperti cards, tables, dan form.
+- Public
+    Folder berisikan asset yang dapat diakses secara publik seperti gambar dsb.
+- Scripts
+    Folder berisikan seeding data untuk database.
